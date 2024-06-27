@@ -9,7 +9,7 @@
 #ifndef Core_Array_h
 #define Core_Array_h
 
-#include "Pointer.h"
+#include <Core/Pointer.h>
 
 struct CoreInternalArray {
 	Pointer items;

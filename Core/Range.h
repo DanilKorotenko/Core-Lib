@@ -14,7 +14,7 @@
 struct CoreInternalRange {
 	uint64_t offset;
 	uint64_t length;
-} ATR_PACK;
+};
 
 typedef struct CoreInternalRange Range;
 

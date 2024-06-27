@@ -43,15 +43,15 @@
 
 #pragma mark -
 #pragma mark Standard
-#include "Pointer.h"
-#include "Range.h"
-#include "Number.h"
-#include "Logging.h"
-#include "Attributes.h"
-#include "Buffer.h"
-#include "Array.h"
-#include "Endian.h"
-#include "File.h"
+#include <Core/Pointer.h>
+#include <Core/Range.h>
+#include <Core/Number.h>
+#include <Core/Logging.h>
+#include <Core/Attributes.h>
+#include <Core/Buffer.h>
+#include <Core/Array.h>
+#include <Core/Endian.h>
+#include <Core/File.h>
 
 #pragma mark -
 #pragma mark Geometry
@@ -63,12 +63,12 @@
 
 #pragma mark -
 #pragma mark CoreFoundation
-#ifdef __COREFOUNDATION_COREFOUNDATION__
-#include "CFDictionaryAddition.h"
-#include "CFTypeAddition.h"
-#include "CFDataAddition.h"
-#include "CFStringAddition.h"
-#endif
+//#ifdef __COREFOUNDATION_COREFOUNDATION__
+#include <Core/CFDictionaryAddition.h>
+#include <Core/CFTypeAddition.h>
+#include <Core/CFDataAddition.h>
+#include <Core/CFStringAddition.h>
+//#endif
 
 #endif // __SDM_CORE_LIB
 

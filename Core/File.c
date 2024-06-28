@@ -15,22 +15,24 @@
 
 bool FileExistsAtPath(char *path)
 {
-	bool isDir;
-	return FileExistsAtPathIsDir(path, &isDir);
+    bool isDir;
+    return FileExistsAtPathIsDir(path, &isDir);
 }
 
 bool FileExistsAtPathIsDir(char *path, bool *dir)
 {
-	bool result = false;
-	if (path) {
-		struct stat pathStat;
-		ssize_t stat_result = lstat(path, &pathStat);
-		if (stat_result != -1) {
-			result = true;
-			*dir = S_ISDIR(pathStat.st_mode);
-		}
-	}
-	return result;
+    bool result = false;
+    if (path)
+    {
+        struct stat pathStat;
+        ssize_t stat_result = lstat(path, &pathStat);
+        if (stat_result != -1)
+        {
+            result = true;
+            *dir = S_ISDIR(pathStat.st_mode);
+        }
+    }
+    return result;
 }
 
 #endif
